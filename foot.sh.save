@@ -1,0 +1,78 @@
+#! /bin/bash
+
+
+echo "Quel serai ta planete idéal ?"
+select response in "La terre" "Namek" "Lune";do
+   case $response in
+    "La terre" ) echo "C'est la terre"; break;;
+    "Namek" ) echo "C'est namek"; break;;
+    "Lune" ) echo "C'est la lune"; break;
+  esac
+done
+
+
+
+
+
+echo "tu est heureux avec bach?"
+select REPONSE in "yes" "no" ; do
+  case $REPONSE in
+     "yes" ) echo "ca fait plaizir"; break;;
+     "no" ) echo "pas encore mais ca va venir"; break;;
+   esac
+done
+
+
+
+
+
+echo "Qui va gagner la coupe du monde ?"
+select response in "Argentine" "France" "Allemagne";do
+  case $response in
+    "Argentine" ) echo "Messi va tout tué"; break;;
+    "France" ) echo "Matuidi Charro"; break;;
+    "Allemagne" ) echo "Tu connais le tenant du titre"; break;;
+  esac
+done
+
+
+
+
+
+if [ "$response=Argentine" ] then
+echo "La dernière fois ou l'Argentine à gagner la coupe du monde ?"
+  select response in "1986" "1985" "2002";do
+  case $response in
+
+    "1986" ) echo "BIEN JOUE :O"; break;;
+    "1985" ) echo "Il y a eu une coupe du monde en 1985 ?"; break;;
+    "2002" ) echo "Il faut revoir l'histoire du foot"; break;;
+ esac
+done
+
+
+
+elif [ "$response = France" ] then
+ echo  "La seul fois ou la France à gagner la coupe du monde ?"
+  select response in "1996" "2006" "1998";do
+  case $response in
+
+    "1996" ) echo "Tu m'as apprend une bonne"; break; break;;
+    "2006" ) echo "Tu ne te rappel pas du coup de boule de Zizou ?"; break;;
+    "1998" ) echo " Et un et deux et trois ZERO"; break;;
+
+ esac
+done
+
+else [ "$response=Allemagne" ] then
+ echo "Combien de fois l'Allemagne à gagnié la coupe du monde ?"
+  select response in "10" "4" "2";do
+  case $response in
+
+    "10" ) echo "HEIIIN ?"; break;;
+    "4" ) echo "OUUIIIIIII"; break;;
+    "2" ) echo "NOOOOOOOOOOOON"; break;;
+
+ esac
+
+done
