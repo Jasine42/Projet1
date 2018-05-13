@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head class="flex-base flex-center">
+    <meta charset="utf-8">
+    <title>c'est mon super site</title>
+    <!-- Chargement de nos feuilles de styles -->
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body class="no-paddin-margin">
+    <header>
+   <h1 class="" id="logo-title"> SYB Porte-Folio </h1>
+    </header>
+
+
+<nav class = "position-fixed">
+  <ul>
+  <li><a href="présentation.html">Présentation</a></li><!--
+ --><li><a href="cv.html">Curriculum Vitae</a></li></li><!--
+ --><li ><a href="passion.html">Passion</a></li></li><!--
+ --><li><a href="animation.html">Aimation</a></li></li><!-- -->
+  </ul>
+</nav>
+
+  <main class="flex-base  flex-column padding-top">
+
+
+<section class="flex-base flex-center full-widht base-card">
+  <div>
+    <h2 class= "no-center"> Couleurs inversé<h2>
+    </div>
+    <section data-use="slider"></section>
+
+
+  <section class="flex-base flex-center full-widht flex-row-alternance base-card">
+    <div id="game-container">
+      <div class="green-color"></div>
+      <div class="green-color"></div>
+      <div class="green-color"></div>
+      <div class="green-color"></div>
+      <div class="green-color"></div>
+      <div class="green-color"></div>
+    </div>
+  </section>
+  <section class="flex-base flex-center full-widht flex-row-alternance base-card">
+    <div>
+
+      <input type="reset" name="button-Reset" id="batata">
+      <div data-use="turnCounter">0</div>
+  </div>
+  </section>
+<p class="p-base">Voici un petit jeu très simple, l'objectif est que les cases coloré en vert devienne toute verte
+  A chaque fois que vous cliquerer sur une case cela inversa la couleurs des cases a droite et à gauche de la case cliker. Bonne chance
+Vous avez un petit bouton "reset", si vous vous êtes trop emélé les pinceaux.
+</p>
+</section>
+
+<section class="flex-base flex-center full-widht base-card">
+  <div>
+    <h2 class= "no-center"> Destruction<h2>
+    </div>
+<input data-action="destroy" type="button" value="destroy"></input>
+</main>
+<footer>
+
+  <ul  class="flex-base no-padding-margin list-no-style menu-buttons full-height">
+    <li class="flex-height flex-center flex-center"> Date de création 2018</li>
+    <li class="flex-height flex-center flex-center"> Copyright 2018 MCCréation</li>
+    <li class="flex-height flex-center flex-center"><a href="#">Mention légales</a></li>
+  </ul>
+
+</footer>
+  <script type="text/javascript" src="./slider.js"></script>
+</body>
+</html>

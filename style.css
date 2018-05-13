@@ -1,0 +1,257 @@
+/*selectors for balises */
+h1{
+  color: black;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+
+
+
+header {
+background-color: black;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./soi.jp");
+}
+
+
+
+
+
+nav ul{
+  margin: 0px;
+  padding: 0px;
+  background-color: #C0C0C0;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  border-right: 1px solid white;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+}
+
+nav li a{
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+}
+
+nav li :hover{
+  background-color: cyan;
+
+}
+
+.curriculum{
+  width: 100px;
+  height: auto;
+}
+
+.padding-top{
+  padding-top: 145px;
+}
+.moi{
+display: flex;
+align-items: center;
+padding-top: 71px;
+flex-direction: column
+}
+
+.logoo{
+  width: 100px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.space{
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+.paddin-top{
+  padding-top: 160px;
+}
+.full-height {
+ height:100%
+}
+.yoyo {
+ display: flex;
+ justify-content: space-around;
+}
+.flex-center{
+  align-items: center;
+   }
+.menu-buttons>li>a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.menu-buttons>li{
+padding-left:10px;
+padding-left:10px }
+
+.menu-buttons>li:hover, .menu-buttons>li:hover>a {
+background-color: black;
+color:white;
+}
+
+.menu-buttons>li:hover{
+  background-color: black;
+  color:white;
+}
+ul.flex-center{
+  width:200px;
+}
+.no-padding-margin{
+  margin: 0;
+  padding: 0;
+}
+.list-no-style {
+  list-style: none;
+}
+footer{
+  height: 60px
+}
+.image-container {
+  width: 263px;
+  display: block;
+  margin-left: 50px;
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+  box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+  background-image: url('./L.jpg');
+  border: 10px solid lightgray;
+
+}
+.posi{
+  width: 100px;
+}
+.full-height {
+ height:100%
+}
+
+
+.flex-column {
+flex-direction: column;
+}
+
+.link-no-style{
+  text-decoration: none;
+  color: inherit;
+}
+#logo-title {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+
+.flex-row-alternance{
+  flex-direction: row-reverse;
+}
+.p-base {
+  width: 675px;
+  text-align: justify;
+  color: black;
+}
+
+.base-card{
+padding: 20px;
+margin: 20px;
+-webkit-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+-moz-box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+box-shadow: 10px 9px 15px 6px rgba(0,0,0,1);
+background-image: url('./L.jg');
+border: 10px solid lightgray;
+}
+
+.image-container>img{
+  max-width: 100%;
+  height:auto;
+}
+
+.curriculum>img{
+  max-width: 100%;
+  height:auto;
+}
+
+.flex-base {
+ display: flex;
+ justify-content: space-around;
+}
+.flex-center{
+  align-items: center;
+   }
+   .lecentre{
+     text-align: center;
+   }
+
+.position-fixed{
+position: fixed;  }
+
+.menu-buttons>li>a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.menu-buttons>li{
+padding-left: :10px;
+padding-left:10px }
+
+.menu-buttons>li:hover, .menu-buttons>li:hover>a {
+background-color: black;
+color:white;
+}
+
+.menu-buttons>li:hover{
+  background-color: black;
+  color:white;
+}
+ul.flex-center{
+  width:300px;
+}
+.no-padding-margin{
+  margin: 0;
+  padding:0;
+}
+.list-no-style {
+  list-style: none;
+
+}
+
+#game-container{
+  display: flex;
+  flex-direction: row;
+}
+
+#game-container>div {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  border: 1px solid white;
+}
+#batata{
+  background-color: DarkSeaGreen;
+}
+#game-container>div:hover{
+  cursor:pointer;
+}
+
+.green-color {
+  background-color: green !important;
+}
+.red-color{
+  background-color: red!important;
+}
