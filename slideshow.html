@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<title>Ansuz Slideshow</title>
+<link href="slideshow.css" rel="stylesheet" type="text/css" />
+<script src="slideshow.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* reference pour une image
+--------------------------------------------------------------------------------
+{ url:'visuel_1.jpg', 
+  sliding: 'top/bottom/left/right/opacity/hGrowing/vGrowing',
+  slidingText: 'default/opacity',
+  text: 'Le texte',
+  textDelay: 2000, => delai d'apparition du texte (optionnel, default:0)
+  textPosition: 'left/right',
+  textTop: 70, => position du texte par le haut en pixel
+  textLeft:20, => position du texte (optionnel, sinon instruction css margin-left)
+  textRight:20, => position du texte (optionnel, sinon instruction css margin-right)
+  animationPas:10, => le nombre de pixel à chaque itérations, en pixel
+  animationProgress:50, => itération en ms
+  animationTextPas:5, => le nombre de pixel à chaque itérations, en pixel (pour le texte)
+  animationTextProgress:5, => itération en ms (pour le texte)
+}
+--------------------------------------------------------------------------------
+A propos de la variable text. Si vous utilisez un ' dans votre texte, soit vous l'échappez \', ou vous utilisez des " pour entourer le texte.
+ex:
+    text: 'un échappement d\'apostrophe'
+    text: "un échappement d'apostrophe"
+*/
+
+var listeImages = [
+    { url:'visuel_1.jpg', 
+      sliding: 'top',
+      slidingText: 'default',
+      textDelay: 1000,
+      text: 'Visitez nos cotes sauvages',
+      textPosition: 'left',
+      textTop: 70,
+      textLeft: 40,
+      animationPas: 10,
+      animationProgress: 50,
+      animationTextPas: 5,
+      animationTextProgress: 5,
+    },
+    {
+      url:'visuel_2.jpg',
+      sliding:'hGrowing',
+      slidingText: 'default',
+      textDelay: 1000,
+      text:'Nos falaises remarquables',
+      textPosition:'left',
+      textTop:20,
+      animationPas:10,
+      animationProgress:20,
+      animationTextPas:5,
+      animationTextProgress:5,
+    },
+    {
+      url:'visuel_3.jpg',
+      sliding:'opacity',
+      slidingText: 'default',
+      textDelay: 1000,
+      text:'Protégée du grand large',
+      textPosition:'right',
+      textTop:100,
+      animationPas:0.05,
+      animationProgress:50,
+      animationTextPas:5,
+      animationTextProgress:5,
+    },
+    {
+      url:'visuel_4.jpg',
+      sliding:'bottom',
+      slidingText: 'opacity',
+      textDelay: 1000,
+      text:'Notre lagon de mer turquoise',
+      textPosition:'left',
+      textTop:100,
+      animationPas:10,
+      animationProgress:50,
+      animationTextPas:0.02,
+      animationTextProgress:5,
+    },
+    {
+      url:'visuel_5.jpg',
+      sliding:'top',
+      slidingText: 'opacity',
+      textDelay: 1000,
+      text:'Sans oublier nos plages de sables fin<br>et nos filles dénudées !',
+      textPosition:'right',
+      textTop:20,
+      animationPas:10,
+      animationProgress:50,
+      animationTextPas:0.02,
+      animationTextProgress:5,
+    },
+];
+
+// Instancier le slideshow
+var monSlideshow = new ClassSlideshow(listeImages);
+monSlideshow.name = 'monSlideshow'; //indiquer nom de la var utiliser pour la class
+monSlideshow.slideHeight = 150;
+monSlideshow.slideWidth = 700;
+monSlideshow.slideChangeDelay = 3000; // 3 secondes entre chaque image
+monSlideshow.slideContentDiv = 'slideshow'; //la div contenant le slideshow
+
+
+// Instancier le slideshow
+var monSlideshow1 = new ClassSlideshow(listeImages);
+monSlideshow1.name = 'monSlideshow1'; //indiquer nom de la var utiliser pour la class
+monSlideshow1.slideHeight = 150;
+monSlideshow1.slideWidth = 700;
+monSlideshow1.slideChangeDelay = 3000; // 3 secondes entre chaque image
+monSlideshow1.slideContentDiv = 'slideshow1'; //la div contenant le slideshow
+
+</script>
+</head>
+<body>
+
+    <br>
+
+    <div id="slideshow">
+    </div>
+    
+    <br>
+    
+    <div id="slideshow1">
+    </div>
+
+<script type="text/javascript">
+    // peut aussi etre instancié dans une fonction onload,
+    // avec les inconvénients qui en découlent ...
+    monSlideshow.createSlideshow();
+    monSlideshow1.createSlideshow();
+</script>
+
+    
+    
+</body></html>
